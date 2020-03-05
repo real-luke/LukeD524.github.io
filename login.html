@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Turret Road' rel='stylesheet'>
+<style>
+body {
+    font-family: 'Verdana';font-size: 22px;
+    margin: center;
+    text-align: center;
+    display: inline-block;
+}
+html {
+  text-align: center;
+}
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Verdana';
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+input {
+   background-color: white;
+  border: none;
+  color: #0099CC;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Verdana';
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body bgcolor="0099CC">
+<form name="loginForm" method="post" action="login.php">
+<table width="20%" bgcolor="0099CC" align="center">
+
+<tr>
+<td colspan=2><center><font size=4><b>Login to Continue</b></font></center></td>
+</tr>
+
+<tr>
+<td>Username:</td>
+<td><input type="text" size=25 name="userid"></td>
+</tr>
+
+<tr>
+<td>Password:</td>
+<td><input type="Password" size=25 name="pwd"></td>
+</tr>
+
+<tr>
+<td></td>
+<td><input type="enter" class="button" onclick="return check(this.form)" value="Login" readonly></td>
+</tr>
+
+</table>
+</form>
+<script language="javascript">
+function check(form)
+{
+
+if(form.userid.value == "luke" && form.pwd.value == "cool")
+{
+	
+  location.href = "www.yoursite.com";
+}
+if(form.userid.value == "andy" && form.pwd.value == "dumb")
+{
+  return true;
+}
+else
+{
+	alert("Incorrect username or password")
+	return false;
+}
+}
+</script>
+</body>
+</html>
