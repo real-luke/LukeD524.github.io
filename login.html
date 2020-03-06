@@ -69,20 +69,23 @@ input {
 function check(form)
 {
 
+if(form.userid.value == "andy" && form.pwd.value == "dumb" || form.userid.value == "luke" && form.pwd.value == "cool")
+{
 if(form.userid.value == "andy" && form.pwd.value == "dumb")
 {
   return true;
-  location.href = "andy";
+  location.href = "andy.html";
 }
+else
 if(form.userid.value == "luke" && form.pwd.value == "cool")
 {
-  return true;
-  location.href = "luke";
+
 }
 else
 {
 	alert("Incorrect username or password")
 	return false;
+}
 }
 }
 </script>
