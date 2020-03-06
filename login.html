@@ -69,14 +69,15 @@ input {
 function check(form)
 {
 
+if(form.userid.value == "andy" && form.pwd.value == "dumb")
+{
+  return true;
+  location.href = "andy";
+}
 if(form.userid.value == "luke" && form.pwd.value == "cool")
 {
   return true;
   location.href = "luke";
-} else if(form.userid.value == "andy" && form.pwd.value == "dumb")
-{
-  return true;
-  location.href = "andy";
 }
 else
 {
